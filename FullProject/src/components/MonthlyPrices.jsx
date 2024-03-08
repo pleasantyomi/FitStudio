@@ -4,16 +4,11 @@ import Line from './Line'
 import PrimaryButton from './PrimaryButton'
 import {  ArrowUpRight  } from 'lucide-react'
 
-const Pricing = () =>{
-    return (
-        <div className="bg-Hero py-10 mt-14 lg:mt-20">
-            <div className="lg:w-6/12 w-full mx-auto leading-tight grid gap-3 pb-10 lg:pb-20">
-                <h1 className="lg:text-[44px] lg:font-[600] text-[28px] font-[700] text-center">Elevate your fitness life with our memberships programs</h1>
-                <p className="font-[400] text-[20px] text-[#262626CC] text-opacity-80 text-center lg:w-full w-10/12 mx-auto lg:mx-0">start 7 days free trails for any package you choose</p>
-            </div>
-
+const MonthlyPrices = () =>{
+    return(
+        <div>
             <div className="lg:w-[89%] w-11/12 mx-auto grid lg:grid-cols-3 lg:gap-5 ">
-                {Prices[0].Home.map((PriceList) =>(
+                {Prices[0].Monthly.map((PriceList) =>(
                     <div key={PriceList.id}>
                         <div className="bg-white border-[1px] border-[#DBDBDB] w-full pt-10 pb-12 rounded-lg lg:mb-0 mb-5">
                             <div className="w-10/12 mx-auto">
@@ -52,4 +47,4 @@ const Pricing = () =>{
         </div>
     )
 }
-export default Pricing;
+export default MonthlyPrices;
