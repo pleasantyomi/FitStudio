@@ -11,7 +11,7 @@ import Testimonials from "./pages/Testimonials"
 function App() {
   return (
     <>
-    <div>
+    <div className="font-primary">
       <Header/>
       <Routes>
         <Route path="/" element={<Website/>}/>
