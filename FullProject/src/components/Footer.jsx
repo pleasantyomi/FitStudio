@@ -1,15 +1,18 @@
 import logo from '../assets/logo-white.svg'
 import PrimaryButton from './PrimaryButton';
 import { ArrowUpRight } from 'lucide-react'
-import { useState } from 'react';
+import { Linkedin } from 'lucide-react'
+import { Facebook } from 'lucide-react'
+import { Instagram } from 'lucide-react';
+import { Twitter } from 'lucide-react'
 
 const Footer = () =>{
-    const [footerIcons] = useState([
-        {title: 'linkedin', id:1},
-        {title: 'facebook', id:2},
-        {title: 'instagram', id:3},
-        {title: 'twitter', id:4},
-    ])
+    const footerIcons = [
+        {title: <Linkedin size={16}/>, id:1},
+        {title: <Facebook size={16}/>, id:2},
+        {title: <Instagram size={16}/>, id:3},
+        {title: <Twitter size={16}/>, id:4},
+    ]
     return(
         <div className="py-10  text-white bg-black lg:py-20 ">
             <div className="lg:w-[89%] w-11/12 mx-auto">
@@ -44,12 +47,12 @@ const Footer = () =>{
 
                 <div className="w-full h-[1px] bg-footer bg-opacity-50 mt-10"></div>
 
-                <div className="flex items-center justify-center gap-3 mt-4 lg:mt-8 lg:gap-5">
+                <div className="flex items-center justify-center gap-3 mt-4 lg:mt-8 lg:gap-2 gap-1">
                     {
                         footerIcons.map((icons) =>(
                             <div key={icons.id}>
-                                <div className="w-6 h-6 rounded-md bg-icons">
-                                        
+                                <div className="relative w-6 h-6 rounded-md bg-icons">
+                                    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ">{icons.title}</div>
                                 </div>
                             </div>
                         ))

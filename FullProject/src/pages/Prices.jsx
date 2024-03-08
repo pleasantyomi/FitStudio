@@ -1,6 +1,10 @@
 import MonthlyPrices from "../components/MonthlyPrices";
 import YearlyPrices from "../components/YearlyPrices";
 import { useState } from "react";
+import image from '../assets/Frame14.png'
+import PrimaryButton from "../components/PrimaryButton";
+import { ArrowUpRight } from 'lucide-react'
+
 
 const Prices = () =>{
     const [page, setPage] = useState(0)
@@ -41,6 +45,19 @@ const Prices = () =>{
 
                 <div>
                     {pageDisplay()}
+                </div>
+
+                <div className="lg:w-[89%] w-11/12 mx-auto lg:grid grid-cols-2 lg:mt-14 mt-6 items-center">
+                    <div>
+                        <h1 className="font-[600] lg:text-[40px] text-[28px] leading-tight">Contact for your family and organizations membership</h1>
+                        <p className="text-[#262626CC] text-opacity-80 lg:text-lg text-md pt-3 lg:w-10/12">Make faster loan decisions, reduce underwriting and credit assessment errors, enhance accuracy, and broaden your credit decisions.</p>
+                        <PrimaryButton className="uppercase font-[400] text-md py-2 px-5 lg:mt-8 mt-6" text={'sign up'} img={<ArrowUpRight strokeWidth={1} className="w-5"/>} />
+                    </div>
+
+                    <div>
+                        <img className="lg:pt-0 pt-5" src={image}/>
+                    </div>
+
                 </div>
             </div>
         </div>

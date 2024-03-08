@@ -7,6 +7,7 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Trainers from "./pages/Trainers"
 import Prices from "./pages/Prices"
+import Testimonials from "./pages/Testimonials"
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Blog" element={<Blog/>}/>
         <Route path="/trainers" element={<Trainers/>}/>
         <Route path="/prices" element={<Prices/>}/>
+        <Route path="/testimony" element={<Testimonials/>}/>
       </Routes>
       <Footer/>
     </div>
