@@ -1,20 +1,27 @@
 import { Route, Routes } from "react-router-dom"
 import Website from "./pages/Website"
-import Classes from "./pages/Classes"
+import Class from "./pages/Class"
 import About from "./pages/About"
 import Blog from "./pages/Blog"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import Trainers from "./pages/Trainers"
 
 function App() {
   return (
     <>
     <div>
+      <Header/>
       <Routes>
         <Route path="/" element={<Website/>}/>
-        <Route to="/about" element={<About/>}/>
-        <Route to ="/classes" element={<Classes/>}/>
-        <Route to="/Blog" element={<Blog/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path ="/classes" element={<Class/>}/>
+        <Route path="/Blog" element={<Blog/>}/>
+        <Route path="/trainers" element={<Trainers/>}/>
       </Routes>
+      <Footer/>
     </div>
+
 
     </>
   )

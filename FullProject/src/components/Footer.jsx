@@ -11,7 +11,7 @@ const Footer = () =>{
         {title: 'twitter', id:4},
     ])
     return(
-        <div className="py-10 mt-10 text-white bg-black lg:py-20 ">
+        <div className="py-10  text-white bg-black lg:py-20 ">
             <div className="lg:w-[89%] w-11/12 mx-auto">
                 <div className="grid items-center justify-between gap-2 pb-8 lg:flex lg:gap-0 lg:pb-14">
                     <div>

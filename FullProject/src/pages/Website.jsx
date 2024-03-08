@@ -1,18 +1,23 @@
 import Explore from "../components/Explore";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Stats from "../components/Stats"
+import Transform from "../components/Transform";
+import More from "../components/More"
+import Pricing from "../components/Pricing";
+import Trainer from "../components/Trainer";
+import Subscribe from "../components/Subscribe";
 
 const Website = () => {
     return(
         <div className="overflow-x-hidden">
-            <Header/>
             <Hero/>
             <Stats/>
             <Explore/>
-            <Footer/>
-
+            <Transform/>
+            <More/>
+            <Pricing/>
+            <Trainer/>
+            <Subscribe/>
         </div>
     )
 };

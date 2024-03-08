@@ -3,6 +3,7 @@ import image from  '../assets/Frame 1321319180.svg'
 import mobile from '../assets/Frame 1321318116.png'
 import PrimaryButton from './PrimaryButton'
 import { ArrowUpRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const Hero = () =>{
     return(
@@ -12,7 +13,9 @@ const Hero = () =>{
                 <div className="lg:w-5/12">
                     <h1 className="font-[800] font-hero lg:text-[4rem] text-[32px] lg:leading-[4.5rem] lg:pb-6 pb-2">Empowering your body; Inspiring your life wellbeing</h1>
                     <p className="pb-5 text-lg lg:pb-10 lg:text-xl text-Grey font-primary">Transform your fitness journey with our engaging classes and experts.</p>
-                    <PrimaryButton text={'Explore Class'} img={<ArrowUpRight strokeWidth={1} className="w-5"/>} className="py-3 px-7"/>
+                    <Link to="/classes">
+                        <PrimaryButton text={'Explore Class'} img={<ArrowUpRight strokeWidth={1} className="w-5"/>} className="py-3 px-7"/>
+                    </Link>
                 </div>
 
                 <div>
