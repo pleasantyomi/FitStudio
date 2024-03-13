@@ -7,6 +7,38 @@ import image6 from '../assets/Frame8.png'
 
 const Classes = [
     {
+        Home : [
+            {
+                id : 1,
+                title : "Yoga Class",
+                image : image1,
+                category : "Health & Fitness",
+                price: "N13,500",
+                content: "Read some books recommendation from our top professionals related to fitness, wellness and personal.",
+                desc: "For both online & physical",
+            
+            },
+
+            {
+                id : 2,
+                title : "Strength Training",
+                image : image2,
+                category : "Health & Fitness",
+                price: "N13,500",
+                content: "Read some books recommendation from our top professionals related to fitness, wellness and personal.",
+                desc: "For both online & physical",
+            },
+
+            {
+                id : 3,
+                title : "Cardio Blast",
+                image : image3,
+                category : "Health & Fitness",
+                price: "N13,500",
+                content: "Read some books recommendation from our top professionals related to fitness, wellness and personal.",
+                desc: "For both online & physical",
+            },
+        ],
         All : [
             {
                 id : 1,

@@ -21,7 +21,7 @@ const Explore = () =>{
            
 
             <div className="lg:grid lg:grid-cols-3 lg:grid-rows-none grid-rows-3 w-full gap-5">
-                {Classes[0].All.map(ClassItem =>(
+                {Classes[0].Home.map(ClassItem =>(
                     <div key={ClassItem.id}>
                         <div className="w-full lg:pb-0 pb-5"> 
                             <img src={ClassItem.image}/>

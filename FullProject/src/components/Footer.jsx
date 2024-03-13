@@ -5,6 +5,7 @@ import { Linkedin } from 'lucide-react'
 import { Facebook } from 'lucide-react'
 import { Instagram } from 'lucide-react';
 import { Twitter } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const Footer = () =>{
     const footerIcons = [
@@ -35,11 +36,21 @@ const Footer = () =>{
                     <div>
                         <nav>
                             <ul className="lg:flex grid items-center lg:gap-10 gap-1 list-disc lg:text-[20px] lg:pl-0 pl-5">
-                                <li className="flex-shrink-0 flex-nowrap">About us</li>
-                                <li  className="flex-shrink-0 flex-nowrap">Contact us</li>
-                                <li>Pricing</li>
-                                <li>Testimonials</li>
-                                <li>Blogs</li>
+                                <li className="flex-shrink-0 flex-nowrap">
+                                    <Link to="/about">About us</Link>
+                                </li>
+                                <li  className="flex-shrink-0 flex-nowrap">
+                                    <Link to="/contact">Contact us</Link>
+                                </li>
+                                <li>
+                                    <Link to="/prices">Pricing</Link>
+                                </li>
+                                <li>
+                                    <Link to="/testimony">Testimonials</Link>
+                                </li>
+                                <li>
+                                    <Link to="/blogs">Blogs</Link>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -47,7 +58,7 @@ const Footer = () =>{
 
                 <div className="w-full h-[1px] bg-footer bg-opacity-50 mt-10"></div>
 
-                <div className="flex items-center justify-center gap-3 mt-4 lg:mt-8 lg:gap-2 gap-1">
+                <div className="flex items-center justify-center gap-3 mt-4 lg:mt-8 lg:gap-2 ">
                     {
                         footerIcons.map((icons) =>(
                             <div key={icons.id}>

@@ -20,10 +20,16 @@ const Trainers = () =>{
     ]
     return(
         <div className="mt-3 mb-10">
-            <div className="relative w-full lg:h-[40vh] h-[30vh] bg-gradient-to-r from-[#072217] to-[#0B363B]">
-                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white lg:w-4/12 w-10/12 rounded-md py-3 px-3 flex gap-2">
-                     <Search className="w-4 h-auto text-[#2F2F2F]" />
-                     <input className="text-[#2F2F2F]" type="text" placeholder="Search by name/training"/>
+          <div className="relative w-full lg:h-[40vh] h-[30vh] bg-gradient-to-r from-[#072217] to-[#0B363B]">
+                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:w-4/12 w-10/12 ">
+                    <div>
+                        <h1 className="font-[700] lg:text-[36px] text-[24px] text-center text-white pb-6">Our Trainers</h1>
+                    </div>
+                    <div className="rounded-md py-3 px-3 flex gap-2  bg-white">
+                        <Search className="w-4 h-auto text-[#2F2F2F]" />
+                        <input className="text-[#2F2F2F] outline-none w-full" type="text" placeholder="Search by name/training"/>
+                    </div>
+
                 </div>
             </div>
 

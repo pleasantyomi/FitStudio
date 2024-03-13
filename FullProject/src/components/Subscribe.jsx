@@ -18,7 +18,7 @@ const Subscribe = () =>{
                 </div>
 
                 <div className="lg:grid lg:grid-cols-3 gap-5">
-                    {Blogs.map((blog)=>(
+                    {Blogs[0].Home.map((blog)=>(
                         <div key={blog.id}>
                             <div className="w-full lg:mb-0 mb-5">
                                 <img src={blog.image}/>
@@ -28,10 +28,7 @@ const Subscribe = () =>{
                                 </p>
 
                                 <PrimaryButton className="bg-transparent text-primary pl-3 pt-2" text={'Read More'} img={<ArrowUpRight strokeWidth={1} className="w-5"/>}/>
-
-
                             </div>
-
                         </div>
                     ))}
 

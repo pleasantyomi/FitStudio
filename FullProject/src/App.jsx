@@ -11,13 +11,13 @@ import Testimonials from "./pages/Testimonials"
 function App() {
   return (
     <>
-    <div className="font-primary">
+    <div className="font-primarys">
       <Header/>
       <Routes>
         <Route path="/" element={<Website/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path ="/classes" element={<Class/>}/>
-        <Route path="/Blog" element={<Blog/>}/>
+        <Route path="/blogs" element={<Blog/>}/>
         <Route path="/trainers" element={<Trainers/>}/>
         <Route path="/prices" element={<Prices/>}/>
         <Route path="/testimony" element={<Testimonials/>}/>

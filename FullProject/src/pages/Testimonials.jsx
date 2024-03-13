@@ -1,3 +1,8 @@
+import Testimony from "../components/Testimony";
+import image from '../assets/Frame15.png'
+import PrimaryButton from "../components/PrimaryButton";
+import { ArrowUpRight } from "lucide-react";
+
 const Testimonials = () =>{
     return(
         <div className="mt-3 mb-10">
@@ -8,6 +13,22 @@ const Testimonials = () =>{
                 </div>
             </div>
 
+            <div>
+                <h1 className="text-center lg:w-8/12 w-11/12 font-[600] mx-auto lg:text-[36px] text-[24px] leading-tight my-8">We help people solving their finance problems in fitness and wellbeing</h1>
+                <Testimony/>
+            </div>
+
+            <div className="lg:w-[89%] w-11/12 mx-auto lg:grid grid-cols-2 lg:mt-14 mt-6 items-center pt-10">
+                    <div>
+                        <h1 className="font-[600] lg:text-[40px] text-[28px] leading-tight">Join us today and kickstart your fitness journey</h1>
+                        <p className="text-[#262626CC] text-opacity-80 lg:text-lg text-md pt-3 lg:w-10/12">Make faster loan decisions, reduce underwriting and credit assessment errors, enhance accuracy, and broaden your credit decisions.</p>
+                        <PrimaryButton className="uppercase font-[400] text-md py-2 px-5 lg:mt-8 mt-6" text={'sign up'} img={<ArrowUpRight strokeWidth={1} className="w-5"/>} />
+                    </div>
+
+                    <div>
+                        <img className="lg:pt-0 pt-5" src={image}/>
+                    </div>
+                </div>
         </div>
     )
 }

@@ -22,12 +22,8 @@ const Trainer = () =>{
                                 </p>
 
                                 <PrimaryButton className="bg-transparent text-primary ml-3 font-[400]" text={'Read More'} img={<ArrowUpRight strokeWidth={1} className="w-5"/>}/>
-
-
                             </div>
-
                         </div>
-
                     ))}
                 </div>
 
